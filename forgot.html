@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Yinka Enoch Adedokun">
+    <meta name="description" content="Simple Forgot Password Page Using HTML and CSS">
+    <meta name="keywords" content="forgot password page, basic html and css">
+    <title>Forgot Password Page - HTML + CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "segoe ui", verdana, helvetica, arial, sans-serif;
+            font-size: 16px;
+            transition: all 500ms ease;
+        }
+
+        body {
+
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            -moz-font-feature-settings: "liga" on;
+
+        }
+        h5:hover{
+            background: linear-gradient(#c4e4e2,#4a4c4d);
+        }
+
+        .row {
+            background-color: rgba(213, 213, 213, 0.6);
+            color: #0b0808;
+            text-align: center;
+            padding: 2em 2em 0.5em;
+            width: 90%;
+            margin: 2em auto;
+            border-radius: 5px;
+            box-shadow: 0 15px 30px 10px #7d7d7d;
+            cursor: pointer;
+        }
+
+        .row h1 {
+            font-size: 2.5em;
+        }
+
+        .row .form-group {
+            margin: 0.5em 0;
+        }
+
+        .row .form-group label {
+            display: block;
+            color: #0a0a0a;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .row .form-group input,
+        .row .form-group button {
+            display: block;
+            padding: 0.5em 0.5em;
+            width: 100%;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            background-color: inherit;
+            border: 2px solid #0e0e0e; /* Adding a border */
+            border-radius: 4px; /* Optional: add border radius for rounded corners */
+            color: #060606;
+        }
+
+        .row .form-group input:focus,
+        .row .form-group button:focus {
+            background-color: #ffffff;
+            color: #000;
+            border: 2px solid #007bff; /* Change border color on focus */
+            padding: 1em 0.5em;
+            animation: pulse 1s infinite ease;
+        }
+
+        .row .form-group button {
+            border: 1px solid #0a0909;
+            border-radius: 5px;
+            outline: none;
+            -moz-user-select: none;
+            user-select: none;
+            color: #333;
+            font-weight: 800;
+            cursor: pointer;
+            margin-top: 2em;
+            padding: 1em;
+        }
+
+        .row .form-group button:hover,
+        .row .form-group button:focus {
+            background-color: #666363;
+            color: white;
+        }
+
+        .row .form-group button.is-loading::after {
+            animation: spinner 500ms infinite linear;
+            content: "";
+            position: absolute;
+            margin-left: 2em;
+            border: 2px solid #000;
+            border-radius: 100%;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            height: 1em;
+            width: 4%;
+        }
+
+        .row .footer h5 {
+            margin-top: 1em;
+        }
+
+        .row .footer p {
+            margin-top: 2em;
+        }
+
+        .row .footer p .symbols {
+            color: #444;
+        }
+
+        .row .footer a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .information-text {
+            color: #0e0e0e;
+        }
+
+        @media screen and (max-width: 320px) {
+            .row {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+
+            .row h1 {
+                font-size: 1.5em !important;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .row {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body style="padding: 100px;">
+    <div class="row">
+        <h1>Forgot Password</h1>
+        <h6 class="information-text">Trouble logging in?</h6>
+        <p>Enter your email and we'll send you a link to reset your password</p>
+        <div class="form-group">
+            <p><label for="email">Email</label></p>
+            <input type="email" placeholder="Enter email address" name="user_email" id="user_email" required>  
+            <button onclick="showSpinner()">Reset Password</button>
+        </div>
+        <div class="footer">
+            <h5>
+                <a href="htmlfile.html">Return to login page</a>
+            </h5>
+        </div>
+    </div>
+</body>
+</html>

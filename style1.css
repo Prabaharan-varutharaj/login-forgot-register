@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+#amazon{
+    width: 315px;
+    height: 33px;
+    font-size: 14px;
+    background: linear-gradient(#c4e4e2,#5bd1e0);
+    border: 0.5px solid #aaaa;
+    border-radius: 3px ;
+    margin-top: 10px;
+}
+#amazon:hover{
+    background: linear-gradient(#c4e4e2,#49a6b3);
+    box-shadow: 0 0 10px #226dce;
+}
+body{
+    /* width: 100%
+    height: 100vh; */
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(255, 255, 255);;
+    
+}
+
+  
+.signin{
+    position: static;
+    margin: 0 auto;
+    border-color: #313030dd;
+    color: rgb(17, 17, 18);
+    border-radius: 10px;
+    border: 0.5px solid #0909095e;
+    width: 340px;
+    padding-left: 25px;
+    font-size: 15px;
+    text-shadow: 0 0 10px white;
+    margin-top: 15%;
+    position:relative;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 15px 30px 10px #cbbaba;
+    cursor: pointer;
+}
+
+input{
+    border-color:#302f2fdd ;
+    border-radius: 10px;
+    border-width: 0.2px;
+    height: 25px;
+    width: 300px;
+    margin: 5px 0px 15px 0px;
+    background-color: rgba(220, 224, 226, 0.474);
+    padding: 7px;
+}
+
+input:focus {
+    -webkit-box-shadow:0px 0px 1.5px 1.5px rgba(231,118,0,0,9);
+    -moz-box-shadow:0px 0px 1.5px 11.5px rgba(231,118,0,0,9);
+    outline: 0;
+}
+
+label{
+    margin-left: 3px;
+}
+
+#signin-txt{
+    font-family: Arial, sans-serif;
+    font-size: 26.5px;
+
+}
+#password{
+    margin-left: 125px;
+}
+
+body{
+    position: relative;
+   
+}
+.head h1 ,img{
+    position: absolute;
+    bottom: 110%;
+    left: 28%;
+    font-size: 50px;
+}
+
+#govt{
+    margin-top: 20px;
+    color: crimson;
+}
+#logo{
+    position: absolute;
+    width: 100px;
+    left: 21%;
+    bottom: 106%;
+    
+    
+}
+
+#bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    position: 50% 50%;
+}
+p{
+    text-align: center;
+    padding-right: 25px;
+    color: #000000;
+    font-weight: lighter;
+    font-size: 13px;
+}
+.one{
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 14px;
+    background: linear-gradient(#c4e4e2,#5bd1e0);
+    border: 0.5px solid #aaaa;
+    border-radius: 3px ;
+    display: inline;
+}
+.one:hover{
+    background: linear-gradient(#c4e4e2,#49a6b3);
+    box-shadow: 0 0 10px #226dce;
+}
